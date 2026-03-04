@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConnect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-white shadow-sm">
+    <h1 class="text-2xl font-bold text-blue-600">EduConnect</h1>
+    <div class="space-x-6 hidden md:block">
+      <a href="#" class="hover:text-blue-600">Home</a>
+      <a href="#" class="hover:text-blue-600">Resources</a>
+      <a href="#" class="hover:text-blue-600">Events</a>
+      <a href="#" class="hover:text-blue-600">Community</a>
+    </div>
+    <div class="space-x-4">
+      <a href="auth.html"
+   class="px-4 py-2 rounded-xl border hover:bg-slate-100">
+   Login
+</a>
+      <a href="auth.html"
+       class="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700">
+       Join Now
+    </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center px-6 py-20 max-w-5xl mx-auto">
+    <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+      Empowering Education Through <span class="text-blue-600">Connection</span>
+    </h2>
+    <p class="mt-6 text-lg text-slate-600">
+      Connect with students, educators, and professionals to share knowledge,
+      grow your network, and unlock new opportunities.
+    </p>
+
+    <div class="mt-10 flex justify-center gap-4 flex-wrap">
+      <a href="auth.html"
+   class="px-6 py-3 bg-blue-600 text-white rounded-2xl shadow-lg hover:bg-blue-700">
+   Join Now
+</a>
+      <button class="px-6 py-3 border rounded-2xl hover:bg-slate-100">
+        Explore Resources
+      </button>
+      <button class="px-6 py-3 bg-slate-200 rounded-2xl hover:bg-slate-300">
+        Browse Events
+      </button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="px-6 py-16 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-semibold text-center mb-12">Our Key Features</h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+        <h4 class="text-xl font-semibold">Networking</h4>
+        <p class="mt-2 text-slate-600">Build meaningful academic & professional connections.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+        <h4 class="text-xl font-semibold">Study Sharing</h4>
+        <p class="mt-2 text-slate-600">Access and share notes, guides, and materials.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+        <h4 class="text-xl font-semibold">Events & Workshops</h4>
+        <p class="mt-2 text-slate-600">Join webinars, workshops, and networking events.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md text-center">
+        <h4 class="text-xl font-semibold">Community</h4>
+        <p class="mt-2 text-slate-600">Engage in discussions and academic forums.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="px-6 py-16 bg-white">
+    <h3 class="text-3xl font-semibold text-center mb-12">What Our Members Say</h3>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="p-6 rounded-2xl shadow-md">
+        <p class="italic text-slate-600">
+          "This platform helped me connect with mentors and improve my academic performance."
+        </p>
+        <p class="mt-4 font-semibold">— Sarah M.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl shadow-md">
+        <p class="italic text-slate-600">
+          "A powerful community for sharing knowledge and discovering opportunities."
+        </p>
+        <p class="mt-4 font-semibold">— David L.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl shadow-md">
+        <p class="italic text-slate-600">
+          "I landed my internship through a workshop connection!"
+        </p>
+        <p class="mt-4 font-semibold">— Priya K.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates -->
+  <section class="px-6 py-16 bg-slate-50">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-12">Latest Updates</h3>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h4 class="text-xl font-semibold">Recent Blog Posts</h4>
+          <ul class="mt-4 space-y-2 text-slate-600 list-disc list-inside">
+            <li>5 Tips for Effective Online Collaboration</li>
+            <li>How Networking Shapes Your Academic Journey</li>
+            <li>Top Study Tools Recommended by Students</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h4 class="text-xl font-semibold">Community Highlights</h4>
+          <ul class="mt-4 space-y-2 text-slate-600 list-disc list-inside">
+            <li>500+ new members joined this month</li>
+            <li>1,200+ study resources uploaded</li>
+            <li>15 upcoming live events</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-slate-500 text-sm">
+    © 2026 EduConnect. All rights reserved.
+  </footer>
+
+</body>
+</html>

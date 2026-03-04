@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduConnect - Study Sharing Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow px-8 py-4 flex justify-between">
+    <h1 class="text-xl font-bold text-blue-600">EduConnect</h1>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="dashboard.html" class="hover:text-blue-600">Dashboard</a>
+      <a href="connections.html" class="hover:text-blue-600">Connections</a>
+      <a href="auth.html" class="hover:text-blue-600">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <div class="max-w-6xl mx-auto mt-10 px-6">
+    <h2 class="text-3xl font-bold">Study-Sharing Hub</h2>
+    <p class="text-slate-600 mt-2">Discover, upload, and rate academic resources.</p>
+  </div>
+
+  <!-- Search & Filter -->
+  <div class="max-w-6xl mx-auto mt-6 px-6 grid md:grid-cols-3 gap-4">
+    <input type="text" placeholder="Search resources..."
+      class="px-4 py-3 border rounded-xl w-full">
+
+    <select class="px-4 py-3 border rounded-xl w-full">
+      <option>Filter by Subject</option>
+      <option>Computer Science</option>
+      <option>Engineering</option>
+      <option>Business</option>
+      <option>Mathematics</option>
+    </select>
+
+    <select class="px-4 py-3 border rounded-xl w-full">
+      <option>Sort by Rating</option>
+      <option>Highest Rated</option>
+      <option>Newest</option>
+    </select>
+  </div>
+
+  <!-- Upload Section -->
+  <div class="max-w-6xl mx-auto mt-8 px-6">
+    <div class="bg-white p-6 rounded-2xl shadow-md">
+      <h3 class="text-xl font-semibold mb-4">Upload Resource</h3>
+
+      <input type="text" placeholder="Resource Title"
+        class="w-full mb-3 px-4 py-2 border rounded-xl">
+
+      <textarea placeholder="Short Description"
+        class="w-full mb-3 px-4 py-2 border rounded-xl"></textarea>
+
+      <input type="file"
+        class="w-full mb-3">
+
+      <button class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700">
+        Submit Resource
+      </button>
+    </div>
+  </div>
+
+  <!-- Resource Library -->
+  <div class="max-w-6xl mx-auto mt-10 px-6">
+    <h3 class="text-2xl font-semibold mb-6">Resource Library</h3>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Resource Card -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h4 class="text-lg font-semibold">Data Structures Notes</h4>
+        <p class="text-slate-600 mt-2">
+          Comprehensive notes covering stacks, queues, trees, and graphs.
+        </p>
+
+        <div class="mt-4 flex justify-between items-center">
+          <span class="text-yellow-500">⭐⭐⭐⭐☆ (4.5)</span>
+          <button class="text-blue-600 hover:underline">Download</button>
+        </div>
+
+        <!-- Feedback -->
+        <div class="mt-4 border-t pt-3">
+          <p class="text-sm font-semibold">Comments:</p>
+          <p class="text-sm text-slate-600 mt-1">"Very helpful for exams!"</p>
+
+          <input type="text" placeholder="Leave a comment..."
+            class="mt-2 w-full px-3 py-2 border rounded-lg text-sm">
+        </div>
+      </div>
+
+      <!-- Resource Card -->
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h4 class="text-lg font-semibold">AI Lecture Video</h4>
+        <p class="text-slate-600 mt-2">
+          Introduction to Machine Learning concepts and algorithms.
+        </p>
+
+        <div class="mt-4 flex justify-between items-center">
+          <span class="text-yellow-500">⭐⭐⭐⭐⭐ (5.0)</span>
+          <button class="text-blue-600 hover:underline">Watch</button>
+        </div>
+
+        <!-- Feedback -->
+        <div class="mt-4 border-t pt-3">
+          <p class="text-sm font-semibold">Comments:</p>
+          <p class="text-sm text-slate-600 mt-1">"Excellent explanation!"</p>
+
+          <input type="text" placeholder="Leave a comment..."
+            class="mt-2 w-full px-3 py-2 border rounded-lg text-sm">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-slate-500 text-sm mt-10">
+    © 2026 EduConnect. All rights reserved.
+  </footer>
+
+</body>
+</html>
